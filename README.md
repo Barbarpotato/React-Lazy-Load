@@ -81,4 +81,4 @@ Now, if you go to the Dev Console -> Source. You need to check the page source f
 ![alt images](/git-image/lazy-load.png)
 
 `Case the user is accessing the Admin page. the Admin component will be added to the bundle size`
-![alt images]('/git-images/lazy-load2.png')
+![alt images](/git-images/lazy-load2.png)
