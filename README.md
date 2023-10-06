@@ -2,7 +2,7 @@
 React Lazy Load is a technique used to load React components lazily, i.e., only when they are needed. This helps reduce the initial bundle size and improve the performance of your React application. You can easily implement lazy loading in your React project using `React.lazy()` along with `Suspense`.
 
 ## Real-World Case
-![alt images]('/git-image/Scenario.png')
+![alt images](/git-image/Scenario.png)
 
 When building a dashboard application. This application has high complexity and requires a large size to be loaded by application users in the future. For example, the dashboard application has several different features, depending on the position of each application user. for example, users with the admin position have a different features in the application compared to users with other positions, for example Sales. When Sales enters a dashboard application. Of course, the features contained in admin will not appear for users with sales positions, BUT users with sales positions will still load the features contained in admin even though they are not used. Vice Versa, This affects the performance, speed and efficiency of an application running.
 
@@ -78,7 +78,7 @@ export default App
 Now, if you go to the Dev Console -> Source. You need to check the page source file. and then check the src folder -> pages . We cannot see our Admin and Sales Component. If we accessing the admin route or the sales route, it will appear in the source dev console. which means that our lazy load implement successfully.
 
 `Case the user is not accessing the Admin page. The Admin File is not loaded, reduce the initial bundle`
-![alt images]('/git-image/;azy-load.png')
+![alt images](/git-image/lazy-load.png)
 
 `Case the user is accessing the Admin page. the Admin component will be added to the bundle size`
-![alt images](/git-image/lazy-load2.png)
+![alt images]('/git-images/lazy-load2.png')
